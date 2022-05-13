@@ -16,10 +16,6 @@
     --footer-bc-color: #2F303A;
 }
 
-html {
-    border-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -47,6 +43,7 @@ ul {
 
 .header .container {
     display: flex;
+    align-items: center;
 }
 
 /* Logo*/
