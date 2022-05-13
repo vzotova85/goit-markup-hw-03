@@ -125,6 +125,11 @@ ul {
     margin: 0;
 }
 
+.contacts .item {
+    font-size: 14px;
+    line-height: 1.14;
+}
+
  .contacts {
     margin-left: auto;
 } 
@@ -308,12 +313,11 @@ h6 {
     margin-bottom: 20px;
 }
 
-.footer .item:not:last-child {
+/* .address .link:not:last-child {
     margin-bottom: 9px;
-}
+} */
 
 /*Portfolio*/
-
 /*фильтр*/
 .button.secondary {
     color: var(--title-text-color);
