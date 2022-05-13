@@ -16,6 +16,16 @@
     --footer-bc-color: #2F303A;
 }
 
+html {
+    border-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: var(--primary-bc-color);
     color: var(--primary-text-color);
@@ -35,6 +45,10 @@ ul {
     outline: 1px solid tomato;
 }
 
+.header .container {
+    display: flex;
+}
+
 /* Logo*/
 .logo {
     text-decoration: none;
@@ -43,6 +57,12 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.12;
+}
+
+.header .logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 93px;
 }
 
 .logo-part {
@@ -58,20 +78,21 @@ ul {
     display: flex;
 }
 
-.site-nav .item {   
+.site-nav .item,
+.contacts .item {   
     margin-right: 50px;
 }
 
-.site-nav .item:last-child {
+.site-nav .item:last-child,
+.contacts .item:last-child {
     margin-right: 0;
 }
 
-
-
 .site-nav .link {
     display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -100,7 +121,16 @@ ul {
 
 /* Contacts*/
 .contacts .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
+}
+
+.contacts,
+.site-nav {
+    display: flex;
 }
 
 .contacts .link:hover,
@@ -108,14 +138,25 @@ ul {
     color: var(--accent-color);
 }
 
-
 /* Section */
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     color: var(--title-text-color);
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.work {
+    padding-top: 0;
 }
 
 /* Hero */
@@ -177,17 +218,20 @@ h3 {
     margin-bottom: 10px;
 }
 
-.team .container {
+/* .team .container {
     padding: 94px 0px;
-}
+} */
 
 .team img {
     padding-bottom: 30px;
 }
 
 /*Footer*/
-.footer .container {
+.footer {
     background-color: var(--footer-bc-color);
+}
+
+.footer .container {
     padding-top: 60px; 
     padding-bottom: 60px;
 }
@@ -202,6 +246,11 @@ h3 {
 .address .link:hover,
 .address .link:focus {
     color: var(--white-text-color);
+}
+
+.footer .logo {
+    
+    margin-bottom: 20px;
 }
 
 /*Portfolio*/
