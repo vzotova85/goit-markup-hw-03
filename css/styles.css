@@ -35,13 +35,22 @@ ul {
 }
 
 /* Header */
+
+/* background colors */
+.header,
+.specifics,
+.work,
+.portfolio {
+    background-color: var(--white-text-color);
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 1px solid tomato; */
+    outline: 1px solid tomato;
 }
 
 .header .container {
@@ -177,6 +186,7 @@ h6 {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+    background-color: var(--footer-bc-color);
 
 }
 .hero-title {
@@ -266,6 +276,10 @@ h6 {
 
 /* Team */
 
+.team {
+    background-color: var(--secondary-bc-color);
+}
+
 .team .list {
     display: flex;
 }
@@ -331,6 +345,13 @@ h6 {
     border-color: var(--secondary-bc-color);
 }
 
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    
+}
+
 .filter-list {
     display: flex;
     justify-content: center;
@@ -374,9 +395,12 @@ h6 {
 }
 
 .portfolio img {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .portfolio .text {
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding-top: 20px;
 }
