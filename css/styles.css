@@ -287,6 +287,10 @@ h6 {
     margin-bottom: 30px;
 }
 
+.team .text {
+    border: 1px solid var(--border-color);
+}
+
 /*Footer*/
 .footer {
     background-color: var(--footer-bc-color);
