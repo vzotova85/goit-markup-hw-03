@@ -354,13 +354,17 @@ h6 {
     letter-spacing: 0.03em;
     padding: 6px 22px;
     border-color: var(--secondary-bc-color);
+    border-style: none;
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
-    
+}
+
+.filter-list .item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .filter-list {
