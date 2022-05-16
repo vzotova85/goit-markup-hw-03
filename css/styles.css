@@ -183,6 +183,8 @@ h6 {
     margin-bottom: 0;
     text-align: center;
     background-color: var(--footer-bc-color);
+    padding-top: 200px;
+    padding-bottom: 200px
 
 }
 .hero-title {
