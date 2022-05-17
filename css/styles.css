@@ -263,6 +263,10 @@ h6 {
     margin-bottom: 10px;
 }
 
+.specifics .section-title {
+    display: none;
+}
+
 /* Work */
 .work .list {
     display: flex;
